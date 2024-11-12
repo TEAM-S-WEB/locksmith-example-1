@@ -8,7 +8,7 @@ const ContactComponent = () => {
       <h1 className={styles.title}>
         Your safety, our priority – unlocking peace of mind in every situation.
       </h1>
-      <Link href={"tel:+1347201312"}>
+      <Link href={"tel:+13472011312"}>
       <button className={styles.btn}>Call Us Today</button>
       </Link>
     </div>

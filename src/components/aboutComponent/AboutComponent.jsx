@@ -32,7 +32,7 @@ const AboutComponent = () => {
           Choose YSL Services for all your locksmith needs, and experience the
           peace of mind that comes with knowing you're in good hands.
         </p>
-        <Link href={"tel:+1347201312"}>
+        <Link href={"tel:+13472011312"}>
         <button className={styles.btn}>Call Us Today</button>
         </Link>
       </div>

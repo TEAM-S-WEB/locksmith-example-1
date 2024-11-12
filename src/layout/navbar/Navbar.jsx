@@ -10,7 +10,7 @@ const Navbar = () => {
         <h3>YSL SERVICES</h3>
         <h1>IN AN EMERGENCY?</h1>
         </div>
-        <Link href={"tel:+1347201312"}>
+        <Link href={"tel:+13472011312"}>
         <button className={styles.btn}>Call us!</button>
         </Link>
         <div className={styles.boxFooter}>
