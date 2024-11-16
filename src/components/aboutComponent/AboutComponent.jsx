@@ -37,8 +37,8 @@ const AboutComponent = () => {
         </Link>
       </div>
       <div className={styles.imageContainer}>
-        <Image className={styles.image} src={img1} width={630} height={430} />
-        <Image className={styles.image} src={img2} width={630} height={430} />
+        <Image className={styles.image} src={img1} width={630} height={430} alt="/imgAbout"/>
+        <Image className={styles.image} src={img2} width={630} height={430} alt="/imgAbout"/>
       </div>
     </div>
   );

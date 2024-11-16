@@ -6,10 +6,13 @@ import GlobalApi from "@/utils/GlobalApi";
 import styles from "./blogpage.module.css";
 import BlogsComponent from "@/components/blogsComponent/BlogsComponent";
 
+
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
 async function getBlog(id) {
-  const blog = await GlobalApi.GetBlogById(id);
+  const blogs = await GlobalApi.GetAllBlogs();
+  const blog = blogs?.filter((item) => item.blogId == id);
+  console.log(blog)
   return blog;
 }
 
@@ -46,7 +49,7 @@ const page = async ({ params }) => {
   if (!blog) {
     console.log(" requst");
   }
-  return <BlogsComponent blog={blog} />;
+  return <BlogsComponent blog={blog[0]} />;
 };
 
 export default page;

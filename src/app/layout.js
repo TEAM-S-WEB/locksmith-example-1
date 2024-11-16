@@ -15,8 +15,13 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "YLS SERVICES",
+  metadataBase: new URL("https://www.locksmithysl.com"),
+  title: {
+    default: "YLS SERVICES",
+    template: '%s | YLS SERVICES'
+  },
   description: "locksmit services",
+ 
 };
 
 export default function RootLayout({ children }) {
