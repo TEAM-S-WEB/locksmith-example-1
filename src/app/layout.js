@@ -18,7 +18,7 @@ export const metadata = {
   metadataBase: new URL("https://www.locksmithysl.com"),
   title: {
     default: "YLS SERVICES",
-    template: "%s | YLS SERVICES",
+    template: '%s | YLS SERVICES',
   },
   description: "locksmit services 24hr, Are you locked out of your home or car? We can send someone to help Now!",
   keywords:

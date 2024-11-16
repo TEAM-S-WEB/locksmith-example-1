@@ -12,18 +12,19 @@ const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 async function getBlog(id) {
   const blogs = await GlobalApi.GetAllBlogs();
   const blog = blogs?.filter((item) => item.blogId == id);
-  return blog;
+  return blog[0];
 }
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const blog = await getBlog(id);
+ 
   if (!blog) {
     return;
   }
 
   return {
-    title: blog?.title,
+    title: `${blog?.title}`,
     description: blog?.description,
     keywords: blog?.keywords,
     openGraph: {
@@ -51,7 +52,7 @@ const page = async ({ params }) => {
   if (!blog) {
     console.log(" requst");
   }
-  return <BlogsComponent blog={blog[0]} />;
+  return <BlogsComponent blog={blog} />;
 };
 
 export default page;
