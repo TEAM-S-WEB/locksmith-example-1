@@ -18,10 +18,12 @@ export const metadata = {
   metadataBase: new URL("https://www.locksmithysl.com"),
   title: {
     default: "YLS SERVICES",
-    template: '%s | YLS SERVICES'
+    template: "%s | YLS SERVICES",
   },
-  description: "locksmit services",
- 
+  description: "locksmit services 24hr, Are you locked out of your home or car? We can send someone to help Now!",
+  keywords:
+    "NYC locksmith, Manhattan locksmith, Brooklyn locksmith, 24/7 locksmith, emergency locksmith, lockouts, lock installation, security systems, fast locksmith, reliable locksmith",
+    type: "website"
 };
 
 export default function RootLayout({ children }) {

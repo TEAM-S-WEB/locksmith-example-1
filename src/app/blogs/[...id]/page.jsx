@@ -25,6 +25,7 @@ export async function generateMetadata({ params }) {
   return {
     title: blog?.title,
     description: blog?.description,
+    keywords: blog?.keywords,
     openGraph: {
       title: blog?.title,
       description: blog?.description,
@@ -35,6 +36,8 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: blog?.pic?.url,
+          width: 1200,
+          height: 250,
         },
       ],
     },
