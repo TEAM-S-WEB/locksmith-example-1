@@ -24,7 +24,7 @@ const GetAllBlogs = async () =>{
 }
   `
   const result = await request(MASTER_URL, query);
-  console.log(result.blogs);
+
   return result.blogs;
   }
 
@@ -48,7 +48,6 @@ const GetBlogById = async (id) =>{
 }
 `
 const result = await request(MASTER_URL, query);
-console.log(result.blogs);
 return result.blogs[0];
 }
 

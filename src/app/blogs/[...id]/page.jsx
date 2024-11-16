@@ -12,7 +12,6 @@ const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 async function getBlog(id) {
   const blogs = await GlobalApi.GetAllBlogs();
   const blog = blogs?.filter((item) => item.blogId == id);
-  console.log(blog)
   return blog;
 }
 

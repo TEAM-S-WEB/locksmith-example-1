@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const BlogsComponent = ({blog}) => {
-  console.log(blog)
+  
   return (
     <div className={styles.container}>
     <header>
