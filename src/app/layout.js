@@ -17,8 +17,8 @@ const geistMono = localFont({
 export const metadata = {
   metadataBase: new URL("https://www.locksmithysl.com"),
   title: {
-    default: "YLS SERVICES",
-    template: '%s | YLS SERVICES',
+    default: "YSL SERVICES",
+    template: '%s | YSL SERVICES',
   },
   description: "locksmit services 24hr, Are you locked out of your home or car? We can send someone to help Now!",
   keywords:
