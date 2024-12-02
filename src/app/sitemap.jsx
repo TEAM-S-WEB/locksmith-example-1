@@ -14,7 +14,7 @@ export default async function sitemap() {
 
       const blogsUrls = blogs.map((blog)=>({
         url:`https://www.locksmithysl.com/blogs/${blog.blogId}`,
-        lastModified: new Date(blog.date),
+        lastModified: new Date(),
       }) )
 
 
