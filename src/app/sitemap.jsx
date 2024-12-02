@@ -5,6 +5,7 @@ export default async function sitemap() {
     async function getBlog() {
         const blogs = await GlobalApi.GetAllBlogs();
         // const blog = blogs?.filter((item) => item.blogId == id);
+ 
         return blogs;
       }
 

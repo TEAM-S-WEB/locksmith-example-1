@@ -39,7 +39,7 @@ const Seo = ({
     <meta property="og:type" content="website"></meta>
     <meta
       property="og:url"
-      content={`https://www.locksmithysl.com/${titlePage}`}
+      content={`https://www.locksmithysl.com/`}
     ></meta>
 
 <link rel="icon" href={HrefIcon ? HrefIcon : "../app/favicon.ico"} sizes="any" />
