@@ -6,20 +6,19 @@ import Footer from "@/layout/footer/Footer";
 import ServicesComponent from "@/components/servicesComponent/ServicesComponent";
 import TestimonialsComponent from "@/components/testimonialsComponent/TestimonialsComponent";
 import ContactComponent from "@/components/contactComponent/ContactComponent";
-import Head from 'next/head';
+import Head from "next/head";
+import Seo from "@/seo/Seo";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Head>
-			<link rel='icon' href='/favicon.jpg'  />
-		</Head>
- <Navbar/>
- <AboutComponent/>
- <ServicesComponent/>
- <TestimonialsComponent/>
- <ContactComponent/>
- <Footer/>
+      <Seo />
+      <Navbar />
+      <AboutComponent />
+      <ServicesComponent />
+      <TestimonialsComponent />
+      <ContactComponent />
+      <Footer />
     </div>
   );
 }
