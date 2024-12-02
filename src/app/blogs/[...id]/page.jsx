@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
       type: "article",
       locale: "en_US",
       url: `https://www.locksmithysl.com/blogs/${id}`,
-      siteName: "YLS Services",
+      siteName: "YSL Services",
       images: [
         {
           url: blog?.pic?.url,
