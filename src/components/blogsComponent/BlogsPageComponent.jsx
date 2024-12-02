@@ -18,13 +18,13 @@ const BlogsPageComponent = ({ blogs }) => {
                 <Image
                   fill
                   className={styles.image}
-                  src={blog.pic?.url}
+                  src={blog?.pic?.url}
                   alt="/blogimage"
                 />
               </div>
               <div className={styles.textContainer}>
                 <span style={{ color: "gray" }}>
-                  <p>DATE: {blog.date}</p>
+                  <p>DATE: {blog?.date}</p>
                 </span>
                 <h3 style={{ margin: "10px 0", fontWeight: 100 }}>
                   {blog?.title}
