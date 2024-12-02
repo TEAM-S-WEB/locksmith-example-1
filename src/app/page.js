@@ -12,7 +12,7 @@ import Seo from "@/seo/Seo";
 export default function Home() {
   return (
     <div className={styles.page}>
-      {/* <Seo /> */}
+      <Seo />
       <Navbar />
       <AboutComponent />
       <ServicesComponent />
