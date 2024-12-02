@@ -2,9 +2,9 @@ import React from "react";
 import { Metadata } from "next";
 import { VT323 } from "next/font/google";
 
-import GlobalApi from "@/utils/GlobalApi";
 import styles from "./blogpage.module.css";
-import BlogsComponent from "@/components/blogsComponent/BlogsComponent";
+import GlobalApi from "@/utils/GlobalApi";
+import BlogsComponent from "@/components/blogsComponent/BlogByIdComponent";
 
 
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
