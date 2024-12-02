@@ -15,6 +15,8 @@ async function getBlog(id) {
   return blog[0];
 }
 
+export const revalidate = 60;
+
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const blog = await getBlog(id);
