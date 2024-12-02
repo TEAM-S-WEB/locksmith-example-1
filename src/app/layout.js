@@ -20,7 +20,7 @@ export const metadata = {
     default: "YSL SERVICES",
     template: '%s | YSL SERVICES',
   },
-  description: "locksmit services 24hr, Are you locked out of your home or car? We can send someone to help Now!",
+  description: "locksmith services 24hr, Are you locked out of your home or car? We can send someone to help Now!",
   keywords:
     "NYC locksmith, Manhattan locksmith, Brooklyn locksmith, 24/7 locksmith, emergency locksmith, lockouts, lock installation, security systems, fast locksmith, reliable locksmith",
     type: "website"

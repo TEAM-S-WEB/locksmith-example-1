@@ -9,7 +9,7 @@ const BlogsComponent = ({blog}) => {
   return (
     <div className={styles.container}>
     <header>
-      <h1>YLS SERVICES</h1>
+      <h1>YSL SERVICES</h1>
     </header>
     <div className={styles.imageContainer}>
       <Image
