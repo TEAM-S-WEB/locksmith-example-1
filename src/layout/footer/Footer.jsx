@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "./footer.module.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className={styles.container}>
       <div>
         <h3>YSL SERVICES</h3>
+        <Link style={{color: "black"}} href={"/blogs"}>my blogs</Link>
       </div>
       <div>
         <h3>LOCATION</h3>
