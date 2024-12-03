@@ -3,8 +3,13 @@ import styles from "./blogspage.module.css";
 import BlogsPageComponent from "@/components/blogsComponent/BlogsPageComponent";
 import GlobalApi from "@/utils/GlobalApi";
 
-async function getAllBlogs() {
+ async function getAllBlogs() {
   const blogs = await GlobalApi.GetAllBlogs();
+  if (!blogs) {
+    return {
+      notFound: true,
+    }
+  }
   return blogs;
 }
 
@@ -28,7 +33,9 @@ export const metadata = {
 
 const page = async () => {
     const blogs = await getAllBlogs();
-    
+    if (!blogs) {
+      console.log(" requst");
+    }
   
   return (
     <div className={styles.container}>
