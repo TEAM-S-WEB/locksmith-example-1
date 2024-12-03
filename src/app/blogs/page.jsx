@@ -32,7 +32,8 @@ const page = async () => {
   
   return (
     <div className={styles.container}>
-      <BlogsPageComponent blogs={blogs}/>
+      <h2>blogs page</h2>
+      {/* <BlogsPageComponent blogs={blogs}/> */}
     </div>
   );
 };
