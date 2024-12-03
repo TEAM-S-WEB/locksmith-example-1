@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const BlogsPageComponent = ({ blogs }) => {
+   
   return (
     <div className={styles.container}>
       <header>

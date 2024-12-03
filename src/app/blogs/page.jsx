@@ -8,6 +8,7 @@ async function getAllBlogs() {
   return blogs;
 }
 
+
 export const revalidate = 60;
 
 export const metadata = {
@@ -28,6 +29,8 @@ export const metadata = {
 
 const page = async () => {
     const blogs = await getAllBlogs();
+    
+  
   return (
     <div className={styles.container}>
       <BlogsPageComponent blogs={blogs}/>
