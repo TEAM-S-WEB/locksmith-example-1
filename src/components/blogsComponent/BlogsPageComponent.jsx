@@ -12,7 +12,7 @@ const BlogsPageComponent = ({ blogs }) => {
         <h1>YSL SERVICES</h1>
       </header>
       <div className={styles.gridContainer}>
-        {blogs.map((blog, i) => {
+        {blogs?.map((blog, i) => {
           return (
             <Link key={i} href={`/blogs/${blog.blogId}`}>
               <div className={styles.imageContainer}>

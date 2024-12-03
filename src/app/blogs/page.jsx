@@ -47,7 +47,11 @@ export const metadata = {
 const page = async ({data}) => {
     const blogs = await data;
     if (!blogs) {
-      console.log(" requst");
+      return(
+        <div className={styles.container}>
+          <p>not found 404</p>
+        </div>
+      )
     }
   
   return (
@@ -60,7 +64,7 @@ const page = async ({data}) => {
             </div>
         )
       })}
-      {/* <BlogsPageComponent blogs={blogs}/> */}
+      <BlogsPageComponent blogs={blogs}/>
     </div>
   );
 };
