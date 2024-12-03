@@ -3,14 +3,27 @@ import styles from "./blogspage.module.css";
 import BlogsPageComponent from "@/components/blogsComponent/BlogsPageComponent";
 import GlobalApi from "@/utils/GlobalApi";
 
- async function getAllBlogs() {
-  const blogs = await GlobalApi.GetAllBlogs();
-  if (!blogs) {
+//  async function getAllBlogs() {
+//   const blogs = await GlobalApi.GetAllBlogs();
+//   if (!blogs) {
+//     return {
+//       notFound: true,
+//     }
+//   }
+//   return blogs;
+// }
+
+
+export async function getStaticProps() {
+  const data = await  GlobalApi.GetAllBlogs();
+  if (!data) {
     return {
       notFound: true,
     }
   }
-  return blogs;
+  return {
+    props: { data },
+  }
 }
 
 
@@ -31,8 +44,8 @@ export const metadata = {
   },
 };
 
-const page = async () => {
-    const blogs = await getAllBlogs();
+const page = async ({data}) => {
+    const blogs = await data;
     if (!blogs) {
       console.log(" requst");
     }

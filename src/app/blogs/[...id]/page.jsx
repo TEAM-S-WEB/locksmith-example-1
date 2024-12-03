@@ -51,7 +51,9 @@ const page = async ({ params }) => {
 
   const blog = await getBlog(id);
   if (!blog) {
-    console.log(" requst");
+   return(
+    <div>404 error</div>
+   )
   }
   return <BlogsComponent blog={blog} />;
 };
