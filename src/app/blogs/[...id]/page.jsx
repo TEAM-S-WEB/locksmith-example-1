@@ -1,13 +1,12 @@
 import React from "react";
 import { Metadata } from "next";
-import { VT323 } from "next/font/google";
+
 
 import styles from "./blogpage.module.css";
 import GlobalApi from "@/utils/GlobalApi";
 import BlogsComponent from "@/components/blogsComponent/BlogByIdComponent";
 
 
-const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
 async function getBlog(id) {
   const blogs = await GlobalApi.GetAllBlogs();
