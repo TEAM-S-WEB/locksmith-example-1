@@ -33,6 +33,13 @@ const page = async () => {
   return (
     <div className={styles.container}>
       <h2>blogs page</h2>
+      {blogs.map((item, i)=>{
+        return(
+          <div>
+            <h1>{item.title}</h1>
+            </div>
+        )
+      })}
       {/* <BlogsPageComponent blogs={blogs}/> */}
     </div>
   );
