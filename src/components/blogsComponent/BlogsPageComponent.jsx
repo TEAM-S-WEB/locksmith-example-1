@@ -16,12 +16,12 @@ const BlogsPageComponent = ({ blogs }) => {
           return (
             <Link key={i} href={`/blogs/${blog.blogId}`}>
               <div className={styles.imageContainer}>
-                <Image
+                {/* <Image
                   fill
                   className={styles.image}
                   src={blog?.pic?.url}
                   alt="/blogimage"
-                />
+                /> */}
               </div>
               <div className={styles.textContainer}>
                 <span style={{ color: "gray" }}>
