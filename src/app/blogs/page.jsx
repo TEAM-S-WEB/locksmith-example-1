@@ -22,7 +22,6 @@ export const metadata = {
     description: "Our locksmith blog offers a wealth of information on residential and commercial locksmith services. Learn about the latest security technologies, get expert advice on lock maintenance, and discover how to choose the right locksmith for your needs. We also provide helpful tips on preventing break-ins and protecting your property.",
     type: "article",
     locale: "en_US",
-    url: `https://www.locksmithysl.com/blogs`,
     siteName: "YSL Services",
   },
 };
