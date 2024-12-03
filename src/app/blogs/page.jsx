@@ -46,7 +46,7 @@ export const metadata = {
 
 const page = async ({data}) => {
     const blogs = await data;
-    console.log(blogs)
+  
     if (!blogs) {
       return(
         <div className={styles.container}>
