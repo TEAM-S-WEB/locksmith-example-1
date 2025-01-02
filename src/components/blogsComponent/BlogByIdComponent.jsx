@@ -3,11 +3,15 @@ import styles from "./blogByIdComponent.module.css";
 import NetworkNavbar from "@/components/common/Networks/NetworkNavbar";
 import Image from "next/image";
 import Link from "next/link";
+import { SiHomebridge } from "react-icons/si";
 
 const BlogsComponent = ({ blog }) => {
   return (
     <div className={styles.container}>
       <header>
+      <Link href={"/"}>
+        <SiHomebridge  className={styles.icon}  size={20}/>
+        </Link>
         <h1>YSL SERVICES</h1>
       </header>
       <div className={styles.imageContainer}>
