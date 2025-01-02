@@ -14,7 +14,7 @@ const BlogsComponent = ({ blog }) => {
         <Image
           fill
           className={styles.image}
-          src={blog.pic?.url}
+          src={blog.picTitle}
           alt="/blogimage"
         />
       </div>

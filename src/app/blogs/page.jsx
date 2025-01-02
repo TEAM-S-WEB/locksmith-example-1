@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./blogspage.module.css";
 import BlogsPageComponent from "@/components/blogsComponent/BlogsPageComponent";
-import GlobalApi from "@/utils/GlobalApi";
+import { GetAllBlogsByUser } from "@/services/apiBlogs";
+import MOKE_DATA from "@/constants/mokedata";
 
  async function getAllBlogs() {
-  const blogs = await GlobalApi.GetAllBlogs();
+  const blogs = await GetAllBlogsByUser();
   if (!blogs) {
     return {
       notFound: true,
@@ -45,8 +46,7 @@ export const metadata = {
 };
 
 const page = async () => {
-    const blogs = await getAllBlogs();
-  
+    const blogs = await GetAllBlogsByUser();
     if (!blogs) {
       return(
         <div className={styles.container}>
@@ -54,12 +54,12 @@ const page = async () => {
         </div>
       )
     }
+    // const blogs = MOKE_DATA.BLOG;
   
   return (
     <div className={styles.container}>
-      <h2>blogs page</h2>
     
-      <BlogsPageComponent blogs={blogs}/>
+      <BlogsPageComponent blogs={blogs.data}/>
     </div>
   );
 };

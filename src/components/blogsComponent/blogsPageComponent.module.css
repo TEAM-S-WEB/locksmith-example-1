@@ -15,6 +15,10 @@
     color: white;
 }
 
+.icon{
+  margin-right: 40px;
+}
+
 .imageContainer {
     flex: 1;
     height: 250px;

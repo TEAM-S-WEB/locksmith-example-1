@@ -3,14 +3,14 @@ import { Metadata } from "next";
 
 
 import styles from "./blogpage.module.css";
-import GlobalApi from "@/utils/GlobalApi";
+import { GetAllBlogsByUser } from "@/services/apiBlogs";
 import BlogsComponent from "@/components/blogsComponent/BlogByIdComponent";
 
 
 
 async function getBlog(id) {
-  const blogs = await GlobalApi.GetAllBlogs();
-  const blog = blogs?.filter((item) => item.blogId == id);
+  const blogs = await GetAllBlogsByUser();
+  const blog = blogs.data?.filter((item) => item._id == id);
   return blog[0];
 }
 

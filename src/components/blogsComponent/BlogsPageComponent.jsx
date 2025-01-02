@@ -3,23 +3,27 @@ import styles from "./blogsPageComponent.module.css";
 import NetworkNavbar from "@/components/common/Networks/NetworkNavbar";
 import Image from "next/image";
 import Link from "next/link";
+import { SiHomebridge } from "react-icons/si";
 
 const BlogsPageComponent = ({ blogs }) => {
    
   return (
     <div className={styles.container}>
       <header>
+        <Link href={"/"}>
+        <SiHomebridge  className={styles.icon}  size={20}/>
+        </Link>
         <h1>YSL SERVICES</h1>
       </header>
       <div className={styles.gridContainer}>
         {blogs?.map((blog, i) => {
           return (
-            <Link key={i} href={`/blogs/${blog.blogId}`}>
+            <Link key={i} href={`/blogs/${blog._id}`}>
               <div className={styles.imageContainer}>
                 <Image
                   fill
                   className={styles.image}
-                  src={blog?.pic?.url}
+                  src={blog?.picTitle}
                   alt="/blogimage"
                 />
               </div>
